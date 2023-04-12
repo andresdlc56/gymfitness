@@ -15,11 +15,16 @@
                     <img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="logotipo">
                 </div>
 
-                <nav>
-                    <a href="/gymfitness/nosotros">Nosotros</a>
-                    <a href="/gymfitness/contacto">Contacto</a>
-                    <a href="/gymfitness/blog">Blog</a>
-                </nav>
+                <?php
+                    $args = array(
+                        'theme_location' => 'menu-principal', 
+                        'container' => 'nav',
+                        'container_class' => 'menu-principal'
+                    );
+
+                    //Mostrando un menu
+                    wp_nav_menu($args);
+                ?>
             </div>
         </header>
 
