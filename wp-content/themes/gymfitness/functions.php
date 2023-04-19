@@ -1,4 +1,12 @@
 <?php
+    function gymfitness_setup() {
+        //Imagenes destacadas
+        add_theme_support('post-thumbnails');
+    }
+
+    //Ejecuta la funcion "gymfitness_setup" al cargar el tema
+    add_action('after_setup_theme', 'gymfitness_setup');
+
     function gymfitness_menus() {
         //Registra menus en wordpress
         register_nav_menus(array(
