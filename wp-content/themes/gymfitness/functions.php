@@ -2,6 +2,9 @@
     function gymfitness_setup() {
         //Imagenes destacadas
         add_theme_support('post-thumbnails');
+
+        //Titulos para SEO
+        add_theme_support('title-tag');
     }
 
     //Ejecuta la funcion "gymfitness_setup" al cargar el tema

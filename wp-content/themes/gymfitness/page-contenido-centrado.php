@@ -12,5 +12,8 @@
                 get_template_part('template-parts/pagina');
             ?>
         </main>
-    </body>
-</html>
+
+<?php 
+    //Traer el archivo footer.php
+    get_footer();
+?>    

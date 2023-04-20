@@ -12,5 +12,8 @@
                 endwhile;
             ?>
         </main>
-    </body>
-</html>
+
+<?php 
+    //Traer el archivo footer.php
+    get_footer();
+?>
