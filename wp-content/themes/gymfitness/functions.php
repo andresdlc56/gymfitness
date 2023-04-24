@@ -28,3 +28,27 @@
 
     //Ejecutando los estilos en este tema
     add_action('wp_enqueue_scripts', 'gymfitness_scripts_styles');
+
+    // Definir zona de widgets
+    function gymfitness_widgets() {
+        register_sidebar(array(
+            'name' => 'Sidebar 1',
+            'id' => 'sidebar_1',
+            'before_widget' => '<div class="widget">',
+            'after_widget' => '</div>',
+            'before_title' => '<h3 class="text-center text-primary">',
+            'after_title' => '</h3>'
+        ));
+
+        register_sidebar(array(
+            'name' => 'Sidebar 2',
+            'id' => 'sidebar_2',
+            'before_widget' => '<div class="widget">',
+            'after_widget' => '</div>',
+            'before_title' => '<h3 class="text-center text-primary">',
+            'after_title' => '</h3>'
+        ));
+    }
+
+    //Agregando el widget a wordpress
+    add_action('widgets_init', 'gymfitness_widgets');
