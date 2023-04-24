@@ -17,6 +17,7 @@
             </div>
         </footer>
 
+        <!-- Permite mostrar la barra de wordpress -->
         <?php wp_footer(); ?>
     </body>
 </html>

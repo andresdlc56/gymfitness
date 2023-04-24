@@ -1,0 +1,1 @@
+<h1>Desde single.php (Custom Post y entradas de Blog)</h1>
